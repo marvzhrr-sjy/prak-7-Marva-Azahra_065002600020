@@ -1,0 +1,5 @@
+def prima(n):
+    return n > 1 and all(n % i for i in range(2, int(n ** 0.5) + 1))
+def tampil(n):
+    print(n, "adalah bilangan prima" if prima(n) else "bukanlah bilangan Prima")
+tampil(int(input("masukkan angka: ")))
